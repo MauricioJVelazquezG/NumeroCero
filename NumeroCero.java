@@ -1,17 +1,17 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
-
 public class NumeroCero {
-    public static void main (String[] args){
-        Scanner scanner = new Scanner(System.in);
-        String numero = JOptionPane.showInputDialog("Give me a number:");
-        int numero1 = Integer.parseInt(numero);
-
-        while (numero1 == 0) {
-            System.out.println("El numero no puede ser 0 escoge un numero positivo");
-            numero = JOptionPane.showInputDialog("Give me a number:");
-            numero1 = Integer.parseInt(numero);
+public static int obtenerNumero (String mensaje){
+    int numeroTemporal = 0;
+    while (numeroTemporal <= 0) {
+            String numero = JOptionPane.showInputDialog("Give me a number:");
+            numeroTemporal = Integer.parseInt(numero);
             
         }
+        return numeroTemporal;
+}
+
+    public static void main (String[] args){
+        int numero = obtenerNumero ("Give me a number:");
     }
 }
