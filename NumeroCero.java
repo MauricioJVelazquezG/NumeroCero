@@ -9,8 +9,8 @@ public class NumeroCero {
 
         while (numero1 == 0) {
             System.out.println("El numero no puede ser 0 escoge un numero positivo");
-            String numero = JOptionPane.showInputDialog("Give me a number:");
-            int numero1 = Integer.parseInt(numero);
+            numero = JOptionPane.showInputDialog("Give me a number:");
+            numero1 = Integer.parseInt(numero);
             
         }
     }
